@@ -4,6 +4,8 @@ Build Habits by Building a Daily Streak
 
 Work Daily on Goals which you value by measuring your progress with this app.
 
+![Progress March 4 2024](./assets/progress-march-4-2024.png)
+
 1) Choose your Daily Goals
 
 2) Create Account/Sign in
