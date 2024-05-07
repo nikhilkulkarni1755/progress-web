@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'streak-counter'`, () => {
+  it(`should have as title 'progress-web'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('streak-counter');
+    expect(app.title).toEqual('progress-web');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('streak-counter app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('progress-web app is running!');
   });
 });
