@@ -10,11 +10,14 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth'
 
 // not prod
 import { environment } from 'src/environments/environment';
+import { CreateAccountComponent } from './create-account/create-account.component';
+import { RouterModule, Routes } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    CreateAccountComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +28,7 @@ import { environment } from 'src/environments/environment';
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [RouterModule]
 })
 export class AppModule { }

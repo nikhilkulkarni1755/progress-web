@@ -22,6 +22,12 @@ export class FirebaseConnectionService {
     // })
   }
 
+  createUser(username: string, password: string) {
+    return this.auth.createUserWithEmailAndPassword(
+      username, password
+    )
+  }
+
   loggedIn() {
     this.isLoggedIn = true
   }
