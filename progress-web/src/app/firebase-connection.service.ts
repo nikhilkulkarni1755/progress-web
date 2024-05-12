@@ -28,6 +28,10 @@ export class FirebaseConnectionService {
     )
   }
 
+  forgotPassword(username: string) {
+    return this.auth.sendPasswordResetEmail(username)
+  }
+
   loggedIn() {
     this.isLoggedIn = true
   }

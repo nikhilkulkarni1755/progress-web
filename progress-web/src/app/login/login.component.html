@@ -6,7 +6,11 @@
     <label>Password: </label><input [(ngModel)]="password" type="password"><br>
     <input type="submit" value="Log in" (click)="login()"><br><br>
 
-    <a routerLink="/createAccount">Don't have an account? Create an account here</a>
+    <a routerLink="/createAccount">Don't have an account? Create an account here</a><br>
+
+    <label>Forgot your password? Try here:</label>
+    <input type="submit" value="Forgot Password" (click)="forgotPassword()"><br><br>
+
 
     <p>{{status}}</p>
 </div>
