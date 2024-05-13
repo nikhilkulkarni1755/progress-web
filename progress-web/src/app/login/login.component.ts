@@ -31,10 +31,16 @@ export class LoginComponent {
   }
 
   forgotPassword() {
-    this.fc.forgotPassword(this.username).then(() => {
-      console.log("Worked!")
-    }, (error: any) => {
-      console.log("error")
-    })
+    if(this.username !== '') {
+      this.fc.forgotPassword(this.username).then(() => {
+        console.log("Worked!")
+      }, (error: any) => {
+        console.log("error")
+      })
+    }
+    else {
+      this.status = 'Enter your username'
+    }
+    
   }
 }
