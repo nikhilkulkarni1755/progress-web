@@ -1,0 +1,15 @@
+{
+  "name": "progress-backend",
+  "version": "1.0.0",
+  "description": "nodejs backend for the progress app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nikhil Kulkarni",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

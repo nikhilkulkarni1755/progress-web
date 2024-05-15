@@ -12,12 +12,14 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth'
 import { environment } from 'src/environments/environment';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    CreateAccountComponent
+    CreateAccountComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
