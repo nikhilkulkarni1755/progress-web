@@ -2,14 +2,13 @@
     <h1>Progress</h1>
     <h3>Login</h3>
 
-    <label>Username: </label><input [(ngModel)]="username" type="text"><br>
+    <label>Email: </label><input [(ngModel)]="email" type="text"><br>
     <label>Password: </label><input [(ngModel)]="password" type="password"><br>
     <input type="submit" value="Log in" (click)="login()"><br><br>
 
     <a routerLink="/createAccount"><button>Don't have an account? Create an account here</button></a><br><br>
 
     <input type="submit" value="Forgot Password?" (click)="forgotPassword()"><br><br>
-
 
     <p>{{status}}</p>
 </div>

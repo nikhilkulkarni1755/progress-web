@@ -10,7 +10,7 @@ import { FirebaseConnectionService } from '../firebase-connection.service';
 })
 export class LoginComponent {
   
-  username: string = ''
+  email: string = ''
   password: string = ''
   status: string = ''
 
@@ -19,9 +19,9 @@ export class LoginComponent {
   }
   
   login() {
-    console.log('username: ' + this.username)
+    console.log('username: ' + this.email)
     
-    this.fc.login(this.username, this.password).then(() => {
+    this.fc.login(this.email, this.password).then(() => {
       this.fc.loggedIn()
       this.status = 'Logged in!'
     }, (error: any) => {
@@ -31,11 +31,12 @@ export class LoginComponent {
   }
 
   forgotPassword() {
-    if(this.username !== '') {
-      this.fc.forgotPassword(this.username).then(() => {
-        console.log("Worked!")
+    if(this.email !== '') {
+      this.fc.forgotPassword(this.email).then(() => {
+        this.status = 'Check your email!'
       }, (error: any) => {
-        console.log("error")
+        console.log(error)
+        this.status = 'error'
       })
     }
     else {

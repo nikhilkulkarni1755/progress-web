@@ -9,7 +9,7 @@ import { FirebaseConnectionService } from '../firebase-connection.service';
 })
 export class CreateAccountComponent {
   
-  username: string = ''
+  email: string = ''
   password: string = ''
   confirmPassword: string = ''
   status: string = ''
@@ -20,14 +20,17 @@ export class CreateAccountComponent {
   
   create() {
     if(this.password === this.confirmPassword) {
-      this.fc.createUser(this.username, this.password)
+      this.fc.createUser(this.email, this.password)
       .then(() => {
         this.status = 'Created Account!'
       }, (error: any) => {
         this.status = 'Error'
       })
     }
-    console.log('create account clicked!')
+    else {
+      this.status = 'Make sure your password and confirm password are the same'
+    }
+    // console.log('create account clicked!')
   }
   
   
