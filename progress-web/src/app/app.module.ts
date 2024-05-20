@@ -10,6 +10,8 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth'
 
 // not prod
 import { environment } from 'src/environments/environment';
+import { prodEnvironment } from 'src/environments/environment.prod'
+
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
@@ -25,6 +27,7 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    // AngularFireModule.initializeApp(prodEnvironment.firebase),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
 
