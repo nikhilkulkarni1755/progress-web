@@ -8,9 +8,8 @@ const routes: Routes = [
   {path:'createAccount',component:CreateAccountComponent},
   {path:'login',component:LoginComponent},
   {path:'home',component:HomeComponent},
-  {path:'**', component:LoginComponent}
-  
-];
+  {path:'**', component:HomeComponent} 
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
