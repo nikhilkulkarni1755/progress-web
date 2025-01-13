@@ -1,24 +1,30 @@
-Progress App
+The Progress App
 
-iOS repository: https://github.com/nikhilkulkarni1755/progress
+iOS App Store: https://apps.apple.com/us/app/the-progress-app/id6503723392
 
 Build Habits by Building a Daily Streak
 
 Work Daily on Goals which you value by measuring your progress with this app
 
-![Progress March 4 2024](./assets/progress-march-4-2024.png)
+V1.1 Features (Coming Soon)
+- Intuitive UI when changing activity (Completed Jan 13)
+- Tutorial, so users can understand how to use the app (Completed Jan 13)
+- 
 
-1) Choose your Daily Goals
+V1 Features (Published to the App Store)
+- Create Account with Email
+- Add and Track your Progress in an Activity
+- Buy Premium Mode, which unlocks 2 more activities.
+- Log Out/Delete Account/Reset Password implemented. 
 
-2) Create Account/Sign in
+Future Ideas
+- Change the name to make it easier for SEO and memorability
+- Take pictures to mark progress
+- weekly iterations
+- Share with socials (whatsapp, x, fb, linkedin)
+- phone notifications
+- background color scheme?
+- email updates?
+- apple intelligence?
 
-3) Create a Goal 
-    - Take a Picture of what you are working on and assign it.
-    - mark the days you worked on it. 
-
-4) Track Status
-
-5) Email Updates
-    - Opt in to get email updates about when your streak expires, weekly stats etc.
-
-    
+No Code will be shared publically, production code should be private.
