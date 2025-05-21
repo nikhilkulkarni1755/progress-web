@@ -2,31 +2,36 @@ import './App.css'
 
 function App() {
   return (
-    <div className="w-screen flex flex-col min-h-screen border-black bg-gray-500">  
+    <div className="w-screen flex flex-col min-h-screen bg-gray-400">
       {/* Header */}
-      <header className="w-full flex justify-between items-center py-24 px-6 pr-24 bg-[#dff6ff] text-black shadow rounded-r-[2vw] max-w-full"
-      style={{
-        background: "linear-gradient(90deg,rgba(223, 246, 255, 1) 0%, rgba(255, 223, 246, 1) 50%, rgba(246, 255, 223, 1) 100%)",
-      }}>
-        <div className="flex flex-col items-start max-w-full overflow-hidden flex-grow max-w-[50%]">
-          <p className="text-4xl font-semibold text-gray-700 leading-tight">
+      <header className="w-[90%] flex justify-between items-center py-24 px-6 pr-24 bg-gray-600 text-black shadow rounded-r-[2vw] max-w-full">
+
+        {/* hook and stuff */}
+        <div className="flex flex-col items-start max-w-[50%] text-left">
+          <p className="text-5xl font-bold text-gray-200 leading-tight">
             Build better habits with
           </p>
-          <p className="text-8xl font-bold italic text-[#4682B4] leading-tight">
+          <p 
+          className="text-7xl font-extrabold italic text-[#DFF6FF] leading-[1.4] bg-clip-text text-transparent"
+          style={{
+            backgroundImage: "linear-gradient(90deg,rgba(223, 246, 255, 1) 0%, rgba(255, 223, 246, 1) 50%, rgba(246, 255, 223, 1) 100%)",
+          }}>
             The Progress App
+          </p>
+
+          <p className="text-lg text-gray-200 leading-tight">
+            text here
           </p>
         </div>
 
-
-        {/* text-[#4682B4] */}
-        <div className='flex items-center max-w-[50%]'>
+        {/* phone image */}
+        <div className="max-w-[45%]">
           <img
-            src="src\assets\phone.png"
-            alt="App Logo"
-            className="w-[200px] h-auto mr-12"
+            src="src/assets/phone.png"
+            alt="App Preview"
+            className="w-[280px] h-auto"
           />
         </div>
-
       </header>
 
       {/* Body */}
